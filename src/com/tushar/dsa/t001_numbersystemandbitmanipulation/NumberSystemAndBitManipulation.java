@@ -1,4 +1,4 @@
-package com.tushar.dsa.numbersystemandbitmanipulation;
+package com.tushar.dsa.t001_numbersystemandbitmanipulation;
 
 public class NumberSystemAndBitManipulation {
 
