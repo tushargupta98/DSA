@@ -11,3 +11,4 @@ Notes:
       3. [4] XOR [3] = [1,0,0] XOR [0,1,1] = [1,1,1] = 7
    2. a&b&c = a&c&b = b&a&c = c&b&a = c&a&b = b&c&a
    3. a^a = b^b = c^c = 0
+   4. a^a^b^b^c = c
