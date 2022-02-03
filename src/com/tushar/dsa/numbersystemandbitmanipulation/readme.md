@@ -1,5 +1,6 @@
 <h2>Number System and Bit Manipulations</h2>
 <h3> Basics</h3>
+<p>
 1. Computers understands Binary Numbers
 2. Three Important Operations
    1. AND Operation = &
@@ -15,3 +16,4 @@
 6. a^b^c = a^c^b = b^a^c = c^b^a = c^a^b = b^c^a
 8. a^a = b^b = c^c = 0 
 9. a^a^b^b^c = c
+</p>
