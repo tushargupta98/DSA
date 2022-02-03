@@ -1,5 +1,7 @@
 Number System and Bit Manipulations
+
 Basics
+
 1. Computers understands Binary Numbers
 2. Three Important Operations
    1. AND Operation = &
