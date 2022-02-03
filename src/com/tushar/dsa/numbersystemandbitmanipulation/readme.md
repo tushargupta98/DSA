@@ -1,4 +1,5 @@
-Notes:
+<h2>Number System and Bit Manipulations</h2>
+<h3> Basics</h3>
 1. Computers understands Binary Numbers
 2. Three Important Operations
    1. AND Operation = &
@@ -9,6 +10,8 @@ Notes:
       1. [4] AND [3] = [1,0,0] AND [0,1,1] = [0,0,0] = 0
       2. [4] OR [3] = [1,0,0] OR [0,1,1] = [1,1,1] = 7
       3. [4] XOR [3] = [1,0,0] XOR [0,1,1] = [1,1,1] = 7
-   2. a&b&c = a&c&b = b&a&c = c&b&a = c&a&b = b&c&a
-   3. a^a = b^b = c^c = 0
-   4. a^a^b^b^c = c
+4. a&b&c = a&c&b = b&a&c = c&b&a = c&a&b = b&c&a 
+5. a|b|c = a|c|b = b|a&c = c|b|a = c|a|b = b|c|a
+6. a^b^c = a^c^b = b^a^c = c^b^a = c^a^b = b^c^a
+8. a^a = b^b = c^c = 0 
+9. a^a^b^b^c = c
