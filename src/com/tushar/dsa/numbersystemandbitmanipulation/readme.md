@@ -33,3 +33,6 @@ Problems:
 2. In an integer array all the numbers appear in a sequence however one number is missing. Find the missing number.
 3. Check if the number is even or odd. Hint: AND operator
 4. Find the ith bit of a number. Hint: Right Shift Operator and AND Operator 
+5. Given a positive integer A, the task is to count the total number of set bits in the binary representation of all the numbers from 1 to A. Return the count modulo 10 [to the power 9] + 7.
+    Solution: 
+   
