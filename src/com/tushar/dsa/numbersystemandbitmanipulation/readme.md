@@ -15,5 +15,6 @@ Basics
 4. a&b&c = a&c&b = b&a&c = c&b&a = c&a&b = b&c&a 
 5. a|b|c = a|c|b = b|a&c = c|b|a = c|a|b = b|c|a
 6. a^b^c = a^c^b = b^a^c = c^b^a = c^a^b = b^c^a
-8. a^a = b^b = c^c = 0 
-9. a^a^b^b^c = c
+7. a^a = b^b = c^c = 0 
+8. a^a^b^b^c = c
+9. 0^a = a
