@@ -2,12 +2,15 @@ package com.tushar.dsa.patterns;
 
 import java.sql.Array;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class PrefixSum {
     public static void main(String[] args) {
         //getSubArraySum(new int[]{1,2,3,4,5,6,7,8});
-        findAllSubArrays(new int[]{1, 2, 3, -2, 5});
+        //findAllSubArrays(new int[]{1, 2, 3, -2, 5});
+        findAllSubArraysEfficient(new int[]{1, 2, 3, -2, 5});
     }
     /**
      * Given an array arr = [1, 3, 5, 7, 9], answer the following queries:
@@ -75,10 +78,22 @@ public class PrefixSum {
                 }
             }
         }
-
-
-
         System.out.println(totalSubArrays);
+    }
+
+    static void findAllSubArraysEfficient(int[] nums){ // Time Complexity O(n)
+        int sum = 0, count =0;
+        int target = 5;
+        Map<Integer, Integer> frequencyMap  = new HashMap<>();
+        frequencyMap.put(0,1);
+        for(int num : nums){
+            sum += num;
+            if(frequencyMap.containsKey(sum - target)){
+                count += frequencyMap.get(sum-target);
+            }
+            frequencyMap.put(sum, frequencyMap.getOrDefault(sum,0)+1);
+        }
+        System.out.println(count);
     }
 }
 
