@@ -6,7 +6,8 @@ import java.util.List;
 
 public class PrefixSum {
     public static void main(String[] args) {
-        getSubArraySum(new int[]{1,2,3,4,5,6,7,8});
+        //getSubArraySum(new int[]{1,2,3,4,5,6,7,8});
+        findAllSubArrays(new int[]{1, 2, 3, -2, 5});
     }
     /**
      * Given an array arr = [1, 3, 5, 7, 9], answer the following queries:
@@ -45,6 +46,39 @@ public class PrefixSum {
                 System.out.println(prefSumArray[range[1]]-prefSumArray[range[0]-1]);
             }
         }
+    }
+
+    /**
+     * Problem: Find Number of Subarrays with Sum Equal to K
+     * Given an array of integers arr[] and an integer K, your task is to find the number of contiguous subarrays that sum up to K.
+     * Input: arr = [1, 2, 3, -2, 5]
+     *        K = 5
+     * Output: 3
+     *
+     *
+     * */
+
+    static void findAllSubArrays(int[] nums){ // Time Complexity O(n^2)
+        int[] sum = new int[nums.length+1];
+        sum[0] = 0;
+        int target = 5;
+        for(int i = 1; i < sum.length; i++){
+            sum[i] = sum[i-1]+ nums[i-1];
+            System.out.println(sum[i]);
+        }
+        int totalSubArrays = 0;
+
+        for(int start = 0; start < sum.length; start++){
+            for(int end = start+1; end < sum.length; end++){
+                if(sum[end]-sum[start] == target){
+                    totalSubArrays++;
+                }
+            }
+        }
+
+
+
+        System.out.println(totalSubArrays);
     }
 }
 
